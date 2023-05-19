@@ -8,7 +8,13 @@ Copyright 2023 Fukasawa Takashi
 1. 説明
   VBA (Microsoft Office 2019+) からWebブラウザーを操作します。
 
-2. 使用方法
+2.使用しているライブラリー
+  以下のライブラリを使用させて頂いています。感謝。
+  VBA-JSON v2.3.1
+    License: MIT License
+    (c) Tim Hall - https://github.com/VBA-tools/VBA-JSON
+
+3. 使用方法
   (1). 以下のファイルをVBEにインポートします。
     
 
@@ -23,7 +29,7 @@ Copyright 2023 Fukasawa Takashi
         GetInstallDirectoryPath = "C:\nokoko\hataori"
     End Function
 
-3. コード例
+4. コード例
   Sub Example()
       Dim browser As New hataoriBrowser: browser.SetBrowserType = hvBrowserTypeChrome
       Dim html As hataoriElement: Set html = browser.Document.QuerySelector("html")
