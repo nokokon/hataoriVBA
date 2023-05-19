@@ -8,7 +8,13 @@ Copyright 2023 Fukasawa Takashi
 1.Description
   This program operates a web browser from VBA (Microsoft Office 2019+).
 
-2. How to use
+2.Library in use
+  The following libraries are used. Thanks.
+  VBA-JSON v2.3.1
+    License: MIT License
+    (c) Tim Hall - https://github.com/VBA-tools/VBA-JSON
+
+3. How to use
   (1). Import the following files into VBE.
     
 
@@ -23,7 +29,7 @@ Copyright 2023 Fukasawa Takashi
         GetInstallDirectoryPath = "C:\nokoko\hataori"
     End Function
 
-3. Code Example
+4. Code Example
   Sub Example()
       Dim browser As New hataoriBrowser: browser.SetBrowserType = hvBrowserTypeChrome
       Dim html As hataoriElement: Set html = browser.Document.QuerySelector("html")
