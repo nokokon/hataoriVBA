@@ -16,7 +16,13 @@ Copyright 2023 Fukasawa Takashi
 
 3. How to use
   (1). Import the following files into VBE.
-    
+    hataoriSetting.bas
+    hataori.bas
+    hataoriBrowser.cls
+    hataoriElement.cls
+    hataoriElements.cls
+    hataoriPage.cls
+    JsonConverter.bas
 
   (2). Set the following references.
     Microsoft VBScript Regular Expressions 5.5
